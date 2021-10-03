@@ -12,14 +12,14 @@ public class Ejercicio1Classroom {
 		Scanner teclado = new Scanner(System.in);
 		
 		//Recogemos el valor del radio por teclado
-		System.out.println("Introduce el valor del radio de la esfera (cm) ");
+		System.out.print("Introduce el valor del radio de la esfera (cm): ");
 		radio = teclado.nextFloat();
 		
 		//Definimos el valor de la operación de volumen
-		volumen= (4*3,14*(radio*radio*radio))/3;
+		volumen= (float) ((4*Math.PI*(radio*radio*radio))/3);
 		
 		//Finalmente, informamos del resultado del volumen
-		System.out.println("El volumen de la esfera de " + radio + " cm de radio es: " + volumen);
+		System.out.println("El volumen de la esfera de " + radio + " cm de radio es: " + volumen + (" cm³."));
 	}
 
 }
